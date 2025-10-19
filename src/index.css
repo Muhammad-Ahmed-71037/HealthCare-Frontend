@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.ant-input,
+.ant-input::placeholder,
+.ant-input-textarea,
+.ant-input-textarea::placeholder,
+.ant-form-item-label,
+.ant-form-item-explain {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.ant-input {
+  border-radius: 48px !important;
+  padding: 10px 16px !important;
+  transition: all 0.3s ease;
+}
+
+.ant-form-item-explain,
+.ant-form-item-explain-error {
+  margin-top: 2px !important;
+  margin-left: 4px !important;
+  font-size: 13px;
+}
+
+.ant-input-password {
+  border-radius: 48px !important;
+  padding: 0px !important;
+  transition: all 0.3s ease;
+}
+
+.ant-input-password-icon {
+  margin-right: 12px !important;
+  font-size: 18px !important;
+}
+
+@keyframes bet-wiggle {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes bet-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bet-pop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bet-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bet-fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bet-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0 rgba(250, 200, 30, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(250, 200, 30, 0.9));
+  }
+}
+
+@keyframes bet-shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-6px);
+  }
+  30% {
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  70% {
+    transform: translateX(4px);
+  }
+  90% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bet-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slide-down 0.4s ease-out forwards;
+}
+
+.slide-up {
+  animation: slide-up 0.4s ease-out forwards;
+}
+
+.slide-right {
+  animation: slide-right 0.4s ease-out forwards;
+}
+
+.slide-left {
+  animation: slide-left 0.4s ease-out forwards;
+}
+
+.bet-wiggle:hover {
+  animation: bet-wiggle 0.6s ease-in-out infinite;
+  transform-origin: center;
+}
+.bet-scale:hover {
+  animation: bet-scale 0.8s ease-in-out infinite;
+  transform-origin: center;
+}
+.bet-pop {
+  animation: bet-pop 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.bet-spin {
+  animation: bet-spin 0.9s linear infinite;
+  transform-origin: center;
+}
+.bet-fade-in-up {
+  animation: bet-fade-in-up 0.6s ease-out both;
+}
+.bet-glow {
+  animation: bet-glow 1.5s ease-in-out infinite;
+}
+.bet-shake:hover {
+  animation: bet-shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+}
+.bet-bounce {
+  animation: bet-bounce 0.9s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
+}
+
+.bet-hover-pop:hover {
+  animation: bet-pop 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.bet-hover-scale:hover {
+  animation: bet-scale 0.45s ease-in-out both;
+}
