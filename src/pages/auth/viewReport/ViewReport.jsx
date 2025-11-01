@@ -76,7 +76,6 @@ const ViewReport = ({ reportId }) => {
   return (
     <div className="view-report-container">
       <div className="view-report-content">
-        {/* Header Section */}
         <div className="report-header">
           <div className="header-content">
             <div className="header-icon">
@@ -95,9 +94,7 @@ const ViewReport = ({ reportId }) => {
           </div>
         </div>
 
-        {/* Main Content Grid */}
         <div className="report-grid">
-          {/* Report Preview Section */}
           <Card className="report-preview-card">
             <div className="preview-header">
               <div className="preview-title-section">
@@ -142,7 +139,6 @@ const ViewReport = ({ reportId }) => {
             </div>
           </Card>
 
-          {/* AI Summary Section */}
           <Card className="ai-summary-card">
             <div className="summary-header">
               <div className="summary-icon">
@@ -155,7 +151,6 @@ const ViewReport = ({ reportId }) => {
             </div>
 
             <div className="summary-content">
-              {/* English Summary */}
               <div className="summary-section">
                 <h3 className="section-title">
                   <FaUserMd className="section-icon" />
@@ -171,7 +166,6 @@ const ViewReport = ({ reportId }) => {
 
               <Divider className="section-divider" />
 
-              {/* Roman Urdu Explanation */}
               {report.aiSummary?.romanUrdu && (
                 <div className="summary-section">
                   <h3 className="section-title">
@@ -186,7 +180,6 @@ const ViewReport = ({ reportId }) => {
                 </div>
               )}
 
-              {/* Doctor Questions */}
               {report.aiSummary?.doctorQuestions && (
                 <div className="summary-section">
                   <h3 className="section-title">
@@ -206,7 +199,6 @@ const ViewReport = ({ reportId }) => {
                 </div>
               )}
 
-              {/* Food Tips */}
               {report.aiSummary?.foodTips && (
                 <div className="summary-section">
                   <h3 className="section-title">
@@ -226,7 +218,6 @@ const ViewReport = ({ reportId }) => {
                 </div>
               )}
 
-              {/* Disclaimer */}
               <div className="disclaimer-section">
                 <div className="disclaimer-content">
                   <FaExclamationTriangle className="disclaimer-icon" />
