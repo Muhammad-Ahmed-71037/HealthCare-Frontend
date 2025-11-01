@@ -113,7 +113,6 @@ const Signup = () => {
     <div className="signup-container">
       {contextHolder}
       
-      {/* Background Elements */}
       <div className="background-shapes">
         <div className="shape shape-1"></div>
         <div className="shape shape-2"></div>
@@ -130,9 +129,7 @@ const Signup = () => {
       </div>
 
       <div className="signup-content">
-        {/* Main Card */}
         <div className="signup-card">
-          {/* Header Section */}
           <div className="signup-header">
             <div className="header-icon">
               <FaUserPlus />
@@ -143,7 +140,6 @@ const Signup = () => {
             </div>
           </div>
 
-          {/* Progress Section */}
           <div className="progress-section">
             <div className="step-indicator">
               <span className="step-current">{step + 1}</span>
@@ -160,12 +156,10 @@ const Signup = () => {
             </div>
           </div>
 
-          {/* Stepper */}
           <div className="stepper-container">
             <Steper step={step} />
           </div>
 
-          {/* Form Section */}
           <div className="form-container">
             <Form form={form} onFinish={handleNext} layout="vertical">
               <div className="form-content">
@@ -188,7 +182,6 @@ const Signup = () => {
                   />
                 </Form.Item>
 
-                {/* Status Indicators */}
                 <div className="status-indicators">
                   {otpSent && (
                     <div className="status-item success">
@@ -204,7 +197,6 @@ const Signup = () => {
                   )}
                 </div>
 
-                {/* Navigation Buttons */}
                 <div className={`navigation-buttons ${step > 0 ? 'two-buttons' : 'single-button'}`}>
                   {step > 0 && (
                     <CustomButtonTwin
@@ -241,7 +233,6 @@ const Signup = () => {
               </div>
             </Form>
 
-            {/* Login Link */}
             <div className="login-section">
               <p className="login-text">
                 Already have an account?{" "}
@@ -252,7 +243,6 @@ const Signup = () => {
             </div>
           </div>
 
-          {/* Security Footer */}
           <div className="security-footer">
             <FaShieldAlt className="security-icon" />
             <span>Your personal information is securely protected</span>
